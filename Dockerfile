@@ -31,7 +31,7 @@ RUN alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 20000
 ENV JAVA_HOME /usr/java/latest
 
 #install tomcat
-ENV TOMCAT_VERSION 7.0.62
+ENV TOMCAT_VERSION 7.0.68
 RUN wget http://mirrors.cnnic.cn/apache/tomcat/tomcat-7/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.zip -O /tmp/tomcat.zip
 RUN unzip /tmp/tomcat.zip -d /tmp/
 RUN rm -rf /tmp/tomcat.zip
